@@ -99,7 +99,7 @@ export default {
         icon: "mdi-vuetify",
       },
       {
-        title: "Pst-Conviction Relief",
+        title: "Post-Conviction Relief",
         subtitle: "",
         url: "",
         icon: "mdi-vuetify",
