@@ -1,9 +1,10 @@
 <template>
-	<div>
-		<VApp>
-			<VMain>
-				<slot />
-			</VMain>
-		</VApp>
-	</div>
+	<VApp>
+		<NavFullNav />
+		<VMain>
+			<slot />
+		</VMain>
+		<SectionsPreFooter />
+		<SectionsFooter />
+	</VApp>
 </template>
