@@ -1,12 +1,12 @@
 import vuetify from "vite-plugin-vuetify";
 
 // PWA Config
-const title = "Vuetify 3 + Nuxt 3 Starter";
-const shortTitle = "Vuetify 3 + Nuxt 3 Starter";
+const title = "McKenzie Law, PllC - Bozeman, Montana Defense Attorney";
+const shortTitle = "McKenzie Law";
 const description =
-  "Template to get you up and running with Nuxt 3 & Vuetify 3";
-const image = "https://vuetify3nuxt3starter.behonbaker.com/starter.png";
-const url = "https://vuetify3nuxt3starter.behonbaker.com/";
+  "Legal Defense in Bozeman, Montana. ";
+const image = "/img/starter.png";
+const url = "https://mckenzielawpllc.com/";
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
@@ -15,7 +15,11 @@ export default defineNuxtConfig({
   // enable takeover mode
   typescript: { shim: false },
   build: { transpile: ["vuetify"] },
+  gtag: {
+    id: "GTM-5QB3784"
+  },
   modules: [
+    "nuxt-gtag",
     "@kevinmarrec/nuxt-pwa",
     async (options, nuxt) => {
       nuxt.hooks.hook("vite:extendConfig", (config) =>
@@ -23,12 +27,12 @@ export default defineNuxtConfig({
         config.plugins.push(vuetify())
       );
     },
-  ],
 
+  ],
   app: {
     head: {
-      title: "Vuetify 3 + Nuxt 3 Starter",
-      titleTemplate: "%s | Vuetify 3 + Nuxt 3 Starter",
+      title: "McKenzie Law - Bozeman Defense Attorney",
+      titleTemplate: "%s | McKenzie Law",
       link: [
         { rel: "stylesheet", href: "https://rsms.me/inter/inter.css" },
         { rel: "preconnect", href: "https://rsms.me/" },
@@ -108,4 +112,5 @@ export default defineNuxtConfig({
       description: description,
     },
   },
+  
 });

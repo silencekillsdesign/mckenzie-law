@@ -12,11 +12,13 @@
     "@iconify/vue": "^4.1.1",
     "@kevinmarrec/nuxt-pwa": "^0.17.0",
     "@nuxtjs/google-fonts": "^3.0.0",
+    "@zadigetvoltaire/nuxt-gtm": "^0.0.13",
     "nuxt": "3.4.2",
     "sass": "^1.62.0",
     "vuetify": "^3.1.15"
   },
   "dependencies": {
+    "nuxt-gtag": "^0.5.7",
     "vee-validate": "^4.5.8",
     "vite-plugin-vuetify": "^1.0.2"
   }
