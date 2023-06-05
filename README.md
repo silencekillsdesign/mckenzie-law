@@ -1,25 +1,6 @@
-# Nuxt 3 + Vuetify 3 Starter
+# Nuxt 3 + Vuetify 3 Website for McKenzie Law in Bozeman, Montana.
 
-![Starter Image](/public/starter.png)
-Nuxt 3 is now stable. Vuetify 3 is now stable. I will be updating this template as we go along. Feel free to open an issue if you have any questions or suggestions.
-This template here will get you up & running with adding the two together :)
-
-## Demo Here
-
-[Online Demo](https://vuetify3nuxt3starter.behonbaker.com)
-
-## How to use
-
-As time passes, I will be updating this template. It will grow with some more pages. It all started with the login & register pages. I may keep a running list of pages added here.
-
-### Pages
-
-<details>
-<summary>Click to see the pages added & planned</summary>
-
-- [x] Login
-- [x] Register
-- [x] Reset Password
+Nuxt 3 is now stable. Vuetify 3 is now stable. I will be updating this template as we go along. 
 
 </details>
 
