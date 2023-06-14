@@ -52,9 +52,9 @@
           return 'Name is requred.'
         },
         value => {
-          if (value?.length <= 30) return true
+          if (value?.length <= 40) return true
 
-          return 'Name must be less than 30 characters.'
+          return 'Name must be less than 40 characters.'
         },
       ],
       email: '',

@@ -29,6 +29,7 @@ export default defineNuxtConfig({
     },
 
   ],
+  // Page Meta
   app: {
     head: {
       title: "McKenzie Law - Bozeman Defense Attorney",
@@ -101,7 +102,7 @@ export default defineNuxtConfig({
   pwa: {
     meta: {
       name: shortTitle,
-      author: "Behon Baker",
+      author: "CJ Williams",
       theme_color: "#4f46e5",
       description: description,
     },
@@ -113,4 +114,12 @@ export default defineNuxtConfig({
     },
   },
   
+  runtimeConfig: {
+    public: {
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://example.com',
+      siteName: 'McKenzie Law, PLLC',
+      siteDescription: 'Bozeman Defense Attorney',
+      language: 'en', // prefer more explicit language codes like `en-AU` over `en`
+    }
+  }
 });

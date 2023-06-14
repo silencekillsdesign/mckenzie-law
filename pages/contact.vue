@@ -9,7 +9,7 @@ import { FormsContactForm } from '~~/.nuxt/components';
                     height="320"
                     src="/img/mountains.jpg">
                     <v-row align="center" justify="center" class="fill-height my-auto">
-                        <h1 class="text-white">in a mess? call wes!</h1>
+                        <h1 class="text-white font-bold text-h3 text-md-h1">contact us</h1>
                     </v-row>
                 </v-parallax>
             </v-container>

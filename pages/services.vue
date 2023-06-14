@@ -1,12 +1,13 @@
 <template>
   <div>
     <v-main class="fill-height pa-0 ma-0">
-      <v-container fluid class="mt-0 mb-16 border-radius-10">
+      <v-container fluid class="mt-0 mb-16 border-radius-10 page-header">
         <v-parallax
           height="320"
-          src="/img/mountains.jpg">
+          src="/img/mountains.jpg"
+          class="border-radius-10">
           <v-row align="center" justify="center" class="fill-height my-auto">
-            <h1 class="text-white">legal services</h1>
+            <h1 class="text-white font-bold text-h3 text-md-h1">legal services</h1>
           </v-row>
         </v-parallax>
       </v-container>
@@ -15,7 +16,7 @@
           <p>At McKenzie Law, we understand that being charged with a criminal offense can be a disturbing experience that can impact every aspect of your life. Our defense lawyers will defend you against misdemeanor or felony charges and protect your liberty, financial security, driving privileges, and reputation. We know that the terms of your sentence can have adverse effects on your career, family, education, and immigration status, so we work tirelessly to achieve the best possible outcome for your case.</p>
         </v-row>
         <v-row>
-          <v-list lines="one">
+          <v-list lines="three">
             <v-list-item
               v-for="service in services"
               :key="service.title"
@@ -27,6 +28,12 @@
     </v-main>
   </div>
 </template>
+
+<style lang="scss">
+.page-header {
+  border-radius: 10px;
+}
+</style>
 
 <script>
 export default {
