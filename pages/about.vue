@@ -12,7 +12,7 @@
             </v-container>
             <v-container>
                 <v-row class="mb-10">
-                    <v-col cols="12" md="6 offset-1">
+                    <v-col cols="12" offset="0" md="6 offset-1">
                         <h3 class="mb-6">understanding your rights</h3>
                         <p>Whether you are the subject of a State or Federal investigation, or you have already been arrested and charged, it is crucial to take steps to protect your rights, reputation, and freedom. Without proper legal representation, you may unknowingly waive your rights, which can be used against you in court. Hiring a criminal defense lawyer means having someone who can guide you through the legal process and ensure that your rights are protected at every stage, including interrogations, searches, lineups, and other pre-charge investigation procedures.</p>
                     </v-col>
@@ -51,3 +51,12 @@ p {
     line-height: 1.8;
 }
 </style>
+
+<script setup lang="ts">
+useSeoMeta({
+  title: 'About McKenzie Law, PLLC.',
+  ogTitle: 'About McKenzie Law',
+  description: 'McKenzie Law, PLLC. Legal Defense in Bozeman Montana. Wes McKenzie, Attorney at Law.',
+  ogDescription: 'McKenzie Law, PLLC. Legal Defense in Bozeman Montana. Wes McKenzie, Attorney at Law.',
+})
+</script>
