@@ -1,8 +1,9 @@
 <template>
     <v-container>
-        <v-form name="contact" method="POST" data-netlify="true">
+        <v-form name="contactPage" action="/thanks" method="POST" data-netlify="true">
             <v-container>
                 <v-row>
+                  <input type="hidden" name="form-name" value="contactPage" />
                     <v-col
                         cols="12"
                         md="6">
@@ -44,7 +45,6 @@
     data: () => ({
       valid: false,
       name: '',
-      items: ['Developer', 'Desinger', 'Blogger', 'Shaq', 'Other'],
       nameRules: [
         value => {
           if (value) return true

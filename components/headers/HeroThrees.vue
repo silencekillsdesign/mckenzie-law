@@ -14,18 +14,19 @@
             <v-btn prepend-icon="mdi-phone" variant="text" href="tel:4065774131">In a Mess? Call Wes!</v-btn>
           </v-col>
           <v-col offset="md-2" class="d-none d-md-block">
-            <v-form @submit.prevent="submit" name="hero-contact" method="POST" netlify>
+            <v-form name="heroContact" action="/thanks" method="POST" netlify>
+              <input type="hidden" name="form-name" value="heroContact" />
               <v-text-field
                 variant="outlined"
                 v-model="name.value.value"
-                :counter="20"
+                :counter="40"
                 :error-messages="name.errorMessage.value"
                 label="Name"></v-text-field>
 
               <v-text-field
                 variant="outlined"
                 v-model="phone.value.value"
-                :counter="7"
+                :counter="10"
                 :error-messages="phone.errorMessage.value"
                 label="Phone Number"></v-text-field>
 
@@ -40,7 +41,7 @@
                 v-model="select.value.value"
                 :items="items"
                 :error-messages="select.errorMessage.value"
-                label="Select"></v-select>
+                label="Consult Type"></v-select>
 
               <v-btn
                 class="me-4"

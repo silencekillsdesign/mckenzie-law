@@ -38,8 +38,8 @@ import { FormsContactForm } from '~~/.nuxt/components';
                                             variant="outlined"
                                             prepend-icon="mdi-phone"
                                             size="small"
-                                            href="tel:6019550080">
-                                            601-955-0080
+                                            href="tel:4065774131">
+                                            406-577-4131
                                         </v-btn>
                                     </v-card-actions>
                                     <v-card-actions>
@@ -48,7 +48,7 @@ import { FormsContactForm } from '~~/.nuxt/components';
                                             variant="outlined"
                                             prepend-icon="mdi-email"
                                             size="small"
-                                            href="mailto:wes@mckenzielaw.com">
+                                            href="mailto:wes@mckenzielawpllc.com">
                                             wes@mckenzielawpllc.com
                                         </v-btn>
                                     </v-card-actions>
