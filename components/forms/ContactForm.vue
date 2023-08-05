@@ -1,6 +1,7 @@
 <template>
     <v-container>
         <v-form name="contactPage" action="/thanks" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contactPage" />
             <v-container>
                 <v-row>
                   <input type="hidden" name="form-name" value="contactPage" />
