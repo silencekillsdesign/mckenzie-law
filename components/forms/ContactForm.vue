@@ -3,12 +3,13 @@
         <form name="contactPage" action="/thanks" method="POST" netlify>
             <v-container>
                 <v-row>
-                  <!-- <input type="hidden" name="form-name" value="contactPage" /> -->
+                  <input type="hidden" name="form-name" value="contactPage" />
                     <v-col
                         cols="12"
                         md="6">
                         <v-text-field
                             v-model="name"
+                            id="name"
                             label="Your Name"
                             required></v-text-field>
                     </v-col>
@@ -18,13 +19,14 @@
                         md="6">
                         <v-text-field
                             v-model="email"
+                            id="email"
                             label="E-mail"
                             required></v-text-field>
                     </v-col>
                 </v-row>
                 <v-row>
                     <v-col>
-                        <v-textarea label="Message"></v-textarea>
+                        <v-textarea id="message" label="Message"></v-textarea>
                     </v-col>
                 </v-row>
                 <v-btn
