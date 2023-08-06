@@ -8,9 +8,9 @@
                         cols="12"
                         md="6">
                         <v-text-field
-                            v-model="name"
                             id="name"
                             label="Your Name"
+                            type="text"
                             required></v-text-field>
                     </v-col>
 
@@ -18,9 +18,9 @@
                         cols="12"
                         md="6">
                         <v-text-field
-                            v-model="email"
                             id="email"
                             label="E-mail"
+                            type="email"
                             required></v-text-field>
                     </v-col>
                 </v-row>
