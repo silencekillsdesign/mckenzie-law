@@ -4,7 +4,8 @@
       height="700"
       cover
       class="hero1 align-center"
-      src="/img/courtroom.png">
+      src="/img/courtroom.png"
+      lazy="/img/courtroom.png">
       <v-container>
         <v-row justify="center" align="center" class="">
           <v-col cols="xs-12 md-5" class="hero-text">
@@ -15,7 +16,7 @@
           </v-col>
           <v-col offset="md-2" class="d-none d-md-block">
             <v-form name="heroContact" action="/thanks" method="POST" netlify>
-              <input type="hidden" name="form-name" value="heroContact" />
+              <input type="hidden" name="hero-contact" value="heroContact" />
               <v-text-field
                 variant="outlined"
                 v-model="name.value.value"
@@ -47,7 +48,8 @@
                 class="me-4"
                 type="submit"
                 color="light-blue-accent-3"
-                flat>
+                flat
+                @click="handleSubmit">
                 submit
               </v-btn>
 
