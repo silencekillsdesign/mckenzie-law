@@ -1,11 +1,7 @@
 <template>
   <v-container>
-    <form name="contactPage" action="/thanks" method="POST" netlify netlify-honeypot>
-      <p class="hidden">
-        <label>
-          Don’t fill this out if you’re human: <input name="bot-field" />
-        </label>
-      </p>
+    <v-form name="contactPage" method="POST" action="/thanks" data-netlify="true" data-netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contactPage">
       <v-container>
         <v-row>
           <input type="hidden" name="form-name" value="contactPage" />
@@ -40,7 +36,7 @@
           submit
         </v-btn>
       </v-container>
-    </form>
+    </v-form>
   </v-container>
 </template>
 

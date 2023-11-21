@@ -15,8 +15,8 @@
             <v-btn prepend-icon="mdi-phone" variant="text" href="tel:4065774131">In a Mess? Call Wes!</v-btn>
           </v-col>
           <v-col offset="md-2" class="d-none d-md-block">
-            <v-form name="heroContact" action="/thanks" method="POST" netlify>
-              <input type="hidden" name="hero-contact" value="heroContact" />
+            <v-form name="heroContact" action="/thanks" method="POST" data-netlify="true">
+              <input type="hidden" name="form-name" value="heroContact" />
               <v-text-field
                 variant="outlined"
                 v-model="name.value.value"
@@ -49,7 +49,7 @@
                 type="submit"
                 color="light-blue-accent-3"
                 flat
-                @click="handleSubmit">
+                >
                 submit
               </v-btn>
 
