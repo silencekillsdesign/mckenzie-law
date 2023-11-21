@@ -16,7 +16,7 @@ export default defineNuxtConfig({
   typescript: { shim: false },
   build: { transpile: ["vuetify"] },
   gtag: {
-    id: "GTM-5QB3784"
+    id: "G-KVCD6GCCPS"
   },
   modules: [
     "nuxt-gtag",
@@ -116,7 +116,7 @@ export default defineNuxtConfig({
   
   runtimeConfig: {
     public: {
-      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://example.com',
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://mckenzielawpllc.com',
       siteName: 'McKenzie Law, PLLC',
       siteDescription: 'Bozeman Defense Attorney',
       language: 'en', // prefer more explicit language codes like `en-AU` over `en`
